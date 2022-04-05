@@ -11,7 +11,7 @@ type FormValues = {
 
 
 
-const Login = () => {
+const Signup = () => {
   const { register, handleSubmit, formState: {errors}} = useForm<FormValues>();
 
   const onSubmit: SubmitHandler<FormValues> = data => {
@@ -22,8 +22,8 @@ const Login = () => {
     <div className='login_signup_body'>
     <div className="box" id="centered-form">
     <form className="loginForm" onSubmit={handleSubmit(onSubmit)}>
-      <span className="first_login_header">Welcome back!</span>
-        <span className="second_login_header">Login to your account</span>
+      <span className="first_login_header">Welcome!</span>
+        <span className="second_login_header">Create your account</span>
       <div className="input-container">
       <input className="form-control"
           {...register("email", { required: 'Email address is required'})} type="email"
@@ -43,12 +43,12 @@ const Login = () => {
         <span className="button-82-shadow"></span>
         <span className="button-82-edge"></span>
         <span className="button-82-front text">
-          Login now
+          Create
         </span>
       </button>
-      <span className="create__acc__text">Don't have an account?</span>
-      <Link to="/signup">
-          <span className="create__acc__link">Create now</span>
+      <span className="create__acc__text">Already have an account?</span>
+      <Link to="/login">
+          <span className="create__acc__link">Login</span>
       </Link>
     </div>
     </form>
@@ -56,4 +56,4 @@ const Login = () => {
     </div>
   );
 };
-export default Login;
+export default Signup;
