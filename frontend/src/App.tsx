@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import { Route, Switch, useLocation, Redirect } from "react-router-dom";
 import './App.css';
-import CreateRoomModal from './components/CreateRoomModal';
 import Header from './components/Header';
 import Login from './components/Login';
-import Rooms from './components/Rooms';
 import Signup from './components/Signup';
 
 function App() {
@@ -18,8 +16,6 @@ function App() {
     </Route>
     <Route path="/rooms">
         <Header heading='Available chat rooms'/>
-        <Rooms />
-        <CreateRoomModal/>
       </Route>
       <Route path="/login">
         <Login />
