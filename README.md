@@ -15,6 +15,6 @@ The objective of our chat application is to provide an easy, intuitive interface
 ### Run React-app
 
 The react-app runs on port 3000.
-- To run the react-app navigate to the `chat-app` folder
+- To run the react-app navigate to the `chat_app` folder
 - Open the cmd/terminal and run `npm install`
 - From the terminal run `npm start`
